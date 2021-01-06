@@ -1,0 +1,19 @@
+-> Revision of previous day
+-> Learnt about log command
+Command:- $ git log
+	  $ git log -5
+
+-> Learnt about Rebase command
+Command:- $ git rebase "Brnch Name"
+
+-> Learnt about Revert command
+Command:- $ git revert "revert ID" 
+
+-> Learnt about Reset command
+Command:- $ git reset --hard
+	  $ git reset --mixed
+	  $ git reset --soft "id"
+
+-> Learnt about .gitignore file
+
+-> Learnt about removing file from staging
