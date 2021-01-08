@@ -1,0 +1,26 @@
+-> Learnt about what is JavaScript?
+    - Lightwight, Cross-Platform & object oriented programming language
+    - One of the core technology of webdevelopment
+
+-> Variables
+    - var keyword used to make variables
+
+-> Data types
+    - Number, Boolean, String,, Undefined, Null
+    - JS has dyanamic typing means data types are assigned automatically to variables
+
+-> Arithmetic Operators
+    +	Addition
+    -	Subtraction
+    *	Multiplication
+    /	Division
+    %	Modulus
+    **	Power
+    ++	Increment
+    --	Decrement
+
+-> Learnt about JS coercion
+
+-> Complete the three task
+    2 - Js challange
+    1 - One HTML challange
