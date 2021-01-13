@@ -1,0 +1,22 @@
+==============JS==============
+-> DOM (Document Object Model)
+- When a web page is loaded, the browser creates a Document Object Model of the page.
+- The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to 
+  dynamically access and update the content, structure, and style of a document.
+- JavaScript can change all the HTML elements, HTML attribute & CSS Styles in the page.
+
+->document.querySelector("").setContent(); (Class and Id selector both)
+->document.getElementById(id).setContent(); (Id selector only)
+- set the content in html tag
+
+->var x = document.querySelector(""); (Class and Id selector both)
+->document.getElementById(id); (Id selector only)
+- get the content of tag in variable
+
+-> Events
+- A JavaScript can be executed when an event occurs, like when a user clicks on an HTML element.
+- ex. of events: onclick, onload,  onunload, onchange, onmouseover, onmouseout, onmousedown, onmouseup, keydown, keypress, keyup etc.
+
+-> addEventListener() method
+- method attaches an event handler to the specified element.
+Syntax: element.addEventListener(event, function, useCapture);
