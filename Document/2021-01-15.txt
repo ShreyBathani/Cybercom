@@ -1,0 +1,23 @@
+==============JS==============
+-> Object
+- In JavaScript, almost "everything" is an object.
+- All JavaScript values, except primitives, are objects.
+- Objects are mutable: They are addressed by reference, not by value.
+- var x = person;
+- Above statement, Both x and person are the same object.
+- Any changes to x will also change person, because x and person are the same object.
+
+
+-> Primitive value
+- 5 types of primitive data types:
+- string, number, boolean, null, undefined
+
+
+-> Prototype Inheritance
+- All JavaScript objects inherit properties and methods from a prototype.
+- prototype property allows us to add new properties to object constructors.
+
+-> First class Function
+- JS treats function as objects.
+- In js we can store function in object, vriable & array.
+- JS allow us to pass functions as parameter to another function and return functions from other functions.
