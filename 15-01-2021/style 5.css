@@ -1,0 +1,30 @@
+table{
+    border: 2px solid;
+    width: 50%;
+    border-collapse: collapse;
+}
+th,td{
+    border: 2px solid;
+    text-align: left;
+    padding: 4px 4px 2px 4px;
+    vertical-align: top;
+}
+.green{
+    background-color: rgb(164, 231, 164);
+}
+caption{
+    text-align: left;
+}
+ul{
+    padding-left: 17px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.blue{background-color: lightblue;}
+.pink{background-color: lightpink;}
+.yello{background-color: lightyellow;}
+u{color: blue; text-decoration-color: black;}
+#cl1{width: 210px;}
+#cl2{width: 380px;}
+#cl3{width: 173px;}
+#cl4{width: 197px;}
