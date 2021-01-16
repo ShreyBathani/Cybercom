@@ -1,0 +1,37 @@
+==============JS==============
+-> First class Function
+- JS treats function as objects.
+- In js we can store function in object, vriable & array.
+- JS allow us to pass functions as parameter to another function and return functions from other functions.
+
+-> Immediately Invoked Function Expression(IIFE)
+- IIFE is a way to execute functions immediately, as soon as they are created.
+- In JavaScript, parenthesis cannot contain statements; it can only contain an expression.
+Syntax: (function() {
+            /* */
+        })()
+
+-> Closure
+- Closure can be useful to create private variables or functions.
+- Closure means that an inner function has always access to the variable and parameters of its outer function, 
+  even after the outer function has returned.
+
+-> call() Method
+- The call() method can be used to invoke (call) a method with an owner object as an argument.
+- With call(), an object can use a method belonging to another object.
+
+-> apply() Method
+- The apply() method is similar to the call().
+- call() method takes arguments separately while apply() method takes arguments as an array.
+
+-> bind() Method
+- Allow us to set this variable explicity
+- bind() generate the copy of the function with preset arguments.
+
+->Diffrence
+||KeyWord   ||Scope             ||can be redeclared ||can be reassigned ||Hoisted   ||
+======================================================================================
+||var       ||Function & Global ||Yes               ||Yes               ||Yes       ||
+||let       ||Block             ||No                ||No                ||No        ||
+||const     ||Block             ||No                ||No                ||No        ||
+
