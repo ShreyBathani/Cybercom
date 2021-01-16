@@ -1,0 +1,51 @@
+img{
+    width: 500px;
+    margin-bottom: 20px;
+}
+.container{
+    text-align: center;
+}
+.wrapper{
+    border: 1px solid lightgray;
+    width: 400px;
+    text-align: left;
+    margin: auto;
+    margin-top: 12px;
+}
+svg{
+    margin: 10px;
+    padding: 0px;
+}
+input,textarea{
+    font-size: 18px;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+textarea{
+    padding-top: 10px;
+}
+input:focus,textarea:focus{
+    outline: none;  
+}
+::placeholder{
+    color: lightgrey;
+}
+#msg{
+    margin-bottom: 0px;
+    margin-top: -210px;
+}
+#submit{
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color:blueviolet;
+    box-shadow: 0px 20px 50px -10px blueviolet;
+}
+#submit:hover{
+    box-shadow: 0px 20px 50px -5px blueviolet;
+}
