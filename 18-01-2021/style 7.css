@@ -1,0 +1,22 @@
+fieldset{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 185%;
+}
+form  { display: table; }
+p     { display: table-row;  }
+label { 
+    display: table-cell;             
+}
+input,textarea,select { 
+    display: table-cell;
+    margin-left: 150px;
+    margin-bottom: 10px;
+}
+.ver{vertical-align: top; }
+.align{margin-left: 45px;}
+#image{margin-bottom: -5px;}
+#hobbies{overflow: hidden;}

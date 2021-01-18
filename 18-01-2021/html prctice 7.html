@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Html Practice 7</title>
+        <link rel="stylesheet" href="style 7.css">
+    </head>
+    <body><br><br>
+        <form action="Successful.html" autocomplete="off" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Your address</legend>
+                <p>
+                    <label for="firstname">First name</label>
+                    <input type="text" id="firstname" name="firstname"><br>
+                </p>
+                <p>
+                    <label for="lastname">Last name</label>
+                    <input type="text" id="lastname" name="lastname"><br>
+                </p>
+                <p>
+                    <label for="street">Street</label>
+                    <input type="text" id="street" name="street"><br>
+                </p>
+                <p>
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city">
+                </p>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Additional details</legend>
+                <p>
+                    <label for="biography" class="ver">Biography</label>
+                    <textarea name="biography" id="biography" cols="25" rows="2"></textarea><br>
+                </p>
+                <p>
+                    <label for="image">Image</label>
+                    <input type="file" id="image" name="image"><br>
+                </p>
+                <p>
+                    <label for="agegrp">Age group</label>
+                    <select name="agegrp" id="agegrp">
+                        <option value="0 to 9 years">0 to 9 Years</option>
+                        <option value="10 to 18 years">10 to 18 Years</option>
+                        <option value="19 to 35 years">19 to 35 Years</option>
+                        <option value="above 35">Above 35</option>
+                    </select>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Interest</legend>
+                <p>
+                    <label for="hobbies" class="ver">Hobbies</label>
+                    <select name="hobbies" id="hobbies" size="4" multiple=true class="align">
+                        <option value="playing soccer">Playing soccer</option>
+                        <option value="dancing">Dancing</option>
+                        <option value="gardening">Gardening</option>
+                        <option value="watching movies">Watching movies</option>
+                    </select><br>
+                </p>
+                <p>
+                    <label for="cars">Favourite car?</label>
+                    <select name="cars" id="cars" class="align">
+                        <option value="volvo">Volvo</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="bmw">BMW</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="transport" class="ver">Favourite public transport?</label>
+                    <select name="transport" id="transport" size="4" class="align">
+                        <optgroup label="Ground">
+                            <option value="bus">Bus</option>
+                            <option value="train">Train</option>
+                        </optgroup>
+                        <optgroup label="Water">
+                        <option value="submarine">Submarine</option>
+                            <option value="ship">Ship</option>
+                        </optgroup>
+                        <optgroup label="Air">
+                            <option value="airplane">Airplane</option>
+                            <option value="helocopter">Helocopter</option>
+                        </optgroup>
+                    </select>
+                </p>
+            </fieldset>
+            <input type="reset" name="reset" value="reset">
+            <input type="submit" name="submit" value="submit">
+        </form>
+    </body>
+</html>
