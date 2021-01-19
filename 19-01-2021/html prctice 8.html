@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Html Practice 7</title>
+        <link rel="stylesheet" href="style 8.css">
+    </head>
+    <body><br><br>
+        <form action="Information.php" autocomplete="off" enctype="multipart/form-data" method="POST">
+            <b>Personal Information</b><br><br>
+            <p class="t-row">
+                <label for="firstname">First name: </label>
+                <input type="text" id="firstname" name="firstname" class="width" required><br><br>
+            </p>
+            <p class="t-row">
+                <label for="lastname">Last name: </label>
+                <input type="text" id="lastname" name="lastname" class="width"><br><br>
+            </p>
+            <p class="t-row">
+                <label for="dob">Date of Birth: </label>
+                <input type="date" id="dob" name="dob" required><br><br>
+            </p>
+            <p class="t-row">
+                <label for="gender">Gender: </label>
+                <select name="gender" id="gender" class="width">
+                    <option value="" disabled selected>Choose a gender </option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select><br><br><br>
+            </p>
+            <b>Account Information</b><br><br>
+            <p class="t-row">
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" class="width" required><br><span class="desc">(Your email addree will be your username)</span><br>
+            </p>
+            <p class="t-row">
+                <label for="reemail">Re-type Email: </label>
+                <input type="email" id="reemail" name="reemail" class="width" required><br><br>
+            </p>
+            <p class="t-row">
+                <label for="password">Password: </label>
+                <input type="password" id="password" name="password" class="width" required><br><span class="desc">(Min. 8 character, 1 number, case-sensitive)</span><br>
+            </p>
+            <p class="t-row">
+                <label for="repassword">Re-type Password: </label>
+                <input type="password" id="repassword" name="repassword" class="width" required><br><br>
+            </p>
+            <p class="t-row">
+                <label for="secque">Security Question: </label>
+                <select name="secque" id="secque" class="width">
+                    <option value="" disabled selected>Choose a security question </option>
+                    <option value="Color">What is your favourite color?</option>
+                    <option value="Food">What is your favourite food?</option>
+                    <option value="Movie">What is your favourite movie?</option>
+                </select><br><br>
+            </p>
+            <p class="t-row">
+                <label for="secans">Security answer: </label>
+                <input type="text" id="secans" name="secans" class="width"><br><span class="desc">(Not Case-sensitive)</span><br><br>
+            </p>
+            <b>Contact Information</b><br><br>
+            <p class="t-row">
+                <label for="address">Address: </label>
+                <input type="text" id="address" name="address" class="width"><br><br>
+            </p>
+            <p class="t-row">
+                <label for="city">City: </label>
+                <input type="text" id="city" name="city" class="width"><br><br>
+            </p>
+            <p class="t-row">
+                <label for="state">State: </label>
+                <select name="state" id="state" class="width">
+                    <option value="" disabled selected>Choose a state: </option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Maharastra">Maharastra</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                </select><br><br>
+            </p>
+            <p class="t-row">
+                <label for="zip-code">Zip-code: </label>
+                <input type="text" id="zip-code1" name="zip-code1" size="6"><input type="text" id="zip-code2" name="zip-code2" size="6" placeholder="Optional"><br><br>
+            </p>
+            <p class="t-row">
+                <label for="phone">Phone: </label>
+                <input type="tel" id="phone" name="phone" size="10" required>
+                <select name="phone-type" id="phone-type">
+                    <option value="Mobile">Mobile</option>
+                    <option value="Telephone">Telephone</option>
+                </select><br><span class="desc">(No space or dashes)</span><br><br>
+            </p>
+            <p class="t-row">
+                <input type="reset" name="reset" value="reset">
+                <input type="submit" name="submit" value="submit">
+            </p>
+        </form><br><br><br>
+    </body>
+</html>
