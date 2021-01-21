@@ -33,6 +33,18 @@ input[type=button]{
    background-color: orange;
    width: 150px;
 }
-.usertable{
-
+table,tr{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th{
+    background-color: gray;
+    color: white;
+    text-align: left;
+}
+th,td{width: 150px;}
+span{
+    color: blue;
+    text-decoration: underline;
+    margin-left: 5px;
 }
