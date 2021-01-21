@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Admin Dashboard</title>
+        <link rel="stylesheet" href="dashbord.css">
+        <script>
+            function logout(){
+            var sessiondata = JSON.parse(localStorage.getItem('sessiondata'));
+            var username = localStorage.getItem('username');
+
+            for(var i = 0; i < sessiondata.length ; i++){
+                for(key in sessiondata[i]){
+                    if(username == sessiondata[i][key])
+                    {
+                        sessiondata[i].logoutTime = Date();
+                        break;
+                    }
+                }
+            }
+            localStorage.setItem('sessiondata', JSON.stringify(sessiondata));
+            window.location.href="login.html";
+            }
+        </script>
+    </head>
+    <body onload="logout()">
+        
+    </body>
+</html>

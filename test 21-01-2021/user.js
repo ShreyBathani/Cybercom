@@ -1,6 +1,8 @@
 
 var userdata = JSON.parse(localStorage.getItem('userdata')) || [];
 
+document.getElementById('username').innerHTML += username; 
+
 function storeuserdata(){
     var name=document.userdata.name.value;
     var email=document.userdata.email.value;
