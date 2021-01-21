@@ -1,6 +1,8 @@
-if(sessionStorage.getItem('admin-loggedin')){
-    alert("Admin Already Registered!!");
-    document.getElementById("register").disabled = true; 
+function check(){
+    if(localStorage.getItem('admindata')){
+        alert("Admin Already Registered!!");
+        document.getElementById("register").disabled = true; 
+    }
 }
 var admindata = [];
 function doregister(){

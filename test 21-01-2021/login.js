@@ -17,6 +17,7 @@ function dologin(){
         alert("Please fill correct data");
     }
 }
+
 function redirect(){
     window.location.href="register.html";
 }
