@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Html Practice 6</title>
+        <link rel="stylesheet" href="login-reg.css">
+        <script src="login.js"></script>
+    </head>
+    <body><br><br><br>
+        <center>
+            <div class="box">
+            <h1>Registration</h1>
+            <div class="container">
+                <form enctype="multipart/form-data" autocomplete="off" name="loginform" id="loginform">
+                    <input type="text" name="name" id="name" placeholder="Name"><br><br>
+                    <input type="email" name="email" id="email" placeholder="Email"><br><br>
+                    <input type="password" name="password" id="password" placeholder="Password"><br><br>
+                    <input type="password" name="repassword" id="repassword" placeholder="Confirm Password"><br><br>
+                    <select name="city" id="city" p>
+                        <option value="" disabled selected>Select City </option>
+                        <option value="Surat">Surat</option>
+                        <option value="Rajkot">Rajkot</option>
+                        <option value="Jaipur">Jaipur</option>
+                        <option value="Uaipur">Uaipur</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Nashik">Nashik</option>
+                    </select><br><br>
+                    <select name="state" id="state" p>
+                        <option value="" disabled selected>Select State </option>
+                        <option value="Gujaraj">Gujaraj</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Maharastra">Maharastra</option>
+                    </select><br><br>
+                    <input type="checkbox" name="condition" id="condition" value=""><label> Terms & condition</label><br><br>
+                    <input type="button" value="Register" id="register" name="register" onclick="doregister()">
+                </form>
+            </div>
+            </div>
+        </center>
+    </body>
+</html>
