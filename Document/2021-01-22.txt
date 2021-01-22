@@ -1,0 +1,103 @@
+==============PHP==============
+-> PHP
+-PHP full form: "PHP: Hypertext Preprocessor".
+-PHP is a widely-used, open source scripting language.
+-PHP scripts are executed on the server.
+
+-> echo and print Statements
+- Both are used to display the text & variables.
+- echo has no return value while print has a return value of 1 so it can be used in expressions. 
+- echo can take multiple parameters while print can take one argument. 
+- echo is faster than print.
+
+-> Comments
+- // used for single line Comment.
+- /* ... */ used for multiline Comment.
+
+-> Variables
+- A variable starts with the $ sign, followed by the name of the variable.
+- A variable name must start with a letter or the underscore character, but not with number.
+- A variable name can only contain alpha-numeric characters and underscores.
+- Variable names are case-sensitive.
+
+-> if...else Statement
+- The if...else statement executes some code if a condition is true and another code if that condition is false.
+Syntax: if (condition) {
+            code to be executed if condition is true;
+        } else {
+            code to be executed if condition is false;
+        }
+
+-> Assignment operators (left operand gets set to the value of the assignment expression on the right.)
+Assign                x = y
+Addition              x+=y
+Subtraction           x-=y
+Multiplication        x*=y
+Divition              x/=y
+Modulas               x%=y
+
+-> Comparison Operators
+Equal                     ==	
+Identical                 ===	
+Not equal                 !=	
+Not equal                 <>	
+Not identical             !==	
+Greater than              >	
+Less than                 <	
+Greater than or equal to  >=	
+Less than or equal to     <=	
+Spaceship                 <=>	
+
+-> Arithmetic Operators
+Addition         +	
+Subtraction      -	
+Multiplication   *	
+Division         /	
+Modulus          %	
+Exponentiation   **	
+
+-> Logical Operators
+And   &&	
+Or    ||	
+Not   !	
+
+-> String Operators
+Concatenation             .
+Concatenation assignment  .=
+
+-> While loop
+- while loop executes a block of code until condition gets false.
+Syntax: while (condition) {
+            //code 
+        }
+
+-> do...while Loop
+- The do...while loop will execute the block of code once, it will then check the condition, 
+  and repeat the loop until condition gets false.
+Syntax: do {
+            //code
+        } while (condition);
+
+-> for loop
+- for loop - Loops through a block of code a specified number of times.
+Syntax: for (init counter; condition; increment counter) {
+            //code
+        }
+
+-> switch Statement
+Syntax: switch(n){
+            case label1:
+                // Code executed if n=label1
+                break;
+            case label2:
+                // Code executed if n=label2
+                break;
+            ...
+            default:
+                // Code executed if n is different from all labels
+        }
+
+
+
+
+
