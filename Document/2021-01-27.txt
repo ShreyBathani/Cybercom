@@ -1,0 +1,68 @@
+==============PHP==============
+=> Array
+- An array is a special variable, which can hold more than one value at a time.
+- array() function is used to create an array
+ex. $name = array('Shrey','Deep','Sandip');
+
+=> Associative Arrays
+- In associative arrays we can named keys.
+
+=> Multidimensional Arrays
+- Multidimensional array is an array containing one or more arrays.
+
+=> foreach loop
+- foreach loop works only on arrays, and is used to loop through each key/value pair in an array.
+Syntax: foreach ($array as $value) {
+            //code
+        }
+
+=> include and require Statements
+- It is possible to insert the content of one PHP file into another PHP file with the include or require statement.
+- include and require statements are same, except failure
+- require will produce a fatal error and stop the script
+- include will only produce a warning and the script will continue
+
+=> include_once and require_once Statements
+- If the file was already included previously, this statement will not include it again.
+
+=> function of string case
+- strtolower() - converts a string to lowercase.
+- strtoupper() - converts a string to uppercase
+- lcfirst() - converts the first character of a string to lowercase
+- ucfirst() - converts the first character of a string to uppercase
+- ucwords() - converts the first character of each word in a string to uppercase
+
+
+=> function String position
+- strpos() finds the position of the first occurrence (case-sensitive)
+- strrpos() Finds the position of the last occurrence (case-sensitive)
+- stripos() Finds the position of the first occurrence (case-insensitive)
+- strripos() Finds the position of the last occurrence (case-insensitive)
+Syntax: strpos(string,find,start)
+- 'string' Specifies the string to search
+- 'find' Specifies the string to find
+- 'start' Specifies where to begin the search.
+
+=> substr_replace()
+- substr_replace() function replaces a part of a string with another string.
+- 'string' Specifies the string to check
+- 'replacement' Specifies the string to insert
+- 'start' Specifies where to start replacing in the string
+- 'length' Specifies how many characters should be replaced
+
+=> str_replace()
+- str_replace() function replaces some characters with some other characters in a string.
+- 'find' Specifies the value to find
+- 'replace' Specifies the value to replace the value in find
+- 'string' Specifies the string to be searched
+- 'count' A variable that counts the number of replacements
+
+
+
+
+
+
+
+
+
+
