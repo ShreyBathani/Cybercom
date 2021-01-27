@@ -1,0 +1,74 @@
+==============PHP==============
+->die & exit function
+- die & exit prints a message and exits the current script.
+
+->preg_match()
+- The preg_match() function returns whether a match was found in a string.
+Syntax: preg_match(pattern, input, matches, flags, offset)
+
+->Functions
+- A function is a block of statements that can be used repeatedly in a program.
+- A function will be executed by a call to the function.
+- A function can also take arguments and return values.
+Syntax: function functionName() {
+        //code
+    }
+
+->String Function
+=>str_word_count()
+- str_word_count() function counts the number of words in a string.
+- str_word_count(string,return,char) function takes 3 arguments.
+- 'string' specifies the string to check.
+- 'return' specifies the return value
+- possible values of 'return':
+    0 - Default. Returns the number of words
+    1 - Returns an array with the words 
+    2 - Returns an associative array where the key is the position of the word
+
+=>str_shuffle()
+- str_shuffle() function randomly shuffles all the characters of a string.
+Syntax: str_shuffle(string)
+
+=>substr()
+- substr() function returns a part of a string.
+- syntax: substr(string,start,length)
+- 'string' specifies the String
+- 'start' specifies where to start in the string
+- 'length' specifies the length of the returned string. Default is to the end of the string.
+
+=>strlen()
+- strlen() function returns the length of a string.
+- syntax: strlen(string)
+- 'string' specifies the String
+
+=>strrev()
+- strrev() function reverses a string.
+- syntax: strrev(string)
+- 'string' specifies the String
+
+=>similar_text()
+- similar_text() function calculates the similarity between two strings.
+- Syntax: similar_text(string1,string2,result)
+- 'string1'	Specifies the first string to be compared
+- 'string2'	Specifies the second string to be compared
+- 'result'	Specifies a variable name for storing the similarity in percent
+
+=>trim()
+- trim() removes whitespace and other predefined characters from both sides of a string.
+- ltrim() removes whitespace or other predefined characters from the left side of a string
+- rtrim() removes whitespace or other predefined characters from the right side of a string
+- Syntax: trim(string,charlist)
+- 'string' specifies the string to check
+- 'charlist' specifies which characters to remove from the string.
+
+=>addslashes()
+- addslashes() function returns a string with backslashes in front of predefined characters.
+- Syntax: addslashes(string)
+- predefined characters:    single quote (')
+                            double quote (")
+                            backslash (\)
+                            NULL
+
+=>stripslashes()
+- stripslashes() function removes backslashes added by the addslashes() function.
+
