@@ -1,0 +1,73 @@
+==============PHP==============
+=>Session
+- A session is started with the session_start() function.
+- Session variables are set with the PHP global variable: $_SESSION.
+- A session is a way to store information to be used across multiple pages.
+- Session store data on server side.
+
+=>Cookie
+- A cookie is created with the setcookie() function.
+- Syntax: setcookie(name, value, expire, path, domain, secure, httponly);
+- Cookie store data on client side.
+
+=>File handling
+- fopen() function is used to open file.
+- fread() function reads from an open file.
+- fclose() function is used to close an open file.
+- fgets() function is used to read a single line from a file.
+- fgetc() function is used to read a single character from a file.
+- feof() function checks if the "end-of-file" (EOF) has been reached.
+- fwrite() function is used to write to a file.
+
+=>explode()
+- explode() function breaks a string into an array.
+- Syntax: explode(separator,string,limit)
+- 'separator' Specifies where to break the string
+- 'string' The string to split
+- 'limit' Specifies the number of array elements to return.
+
+=>implode()
+- implode() function returns a string from the elements of an array.
+- Syntax: implode(separator,array)
+- 'separator' Specifies what to put between the array elements. Default is "" (an empty string)
+- 'array' The array to join to a string
+
+=>opendir()
+- opendir() function opens a directory handle
+- Syntax: opendir(path, context)
+- 'path' Specifies the directory path to be opened
+- 'context' Specifies the context of the directory handle
+
+=>readdir()
+- readdir() function returns the name of the next entry in a directory.
+- Syntax: readdir(dir)
+- 'dir' Specifies the directory handle resource previously opened with opendir()
+
+=>md5()
+- md5() function calculates the MD5 hash of a string
+- Syntax: md5(string,raw)
+- 'string' The string to be calculated
+- 'raw' Specifies hex or binary output format
+
+=>file_exists()
+- file_exists() function checks whether a file or directory exists
+- Syntax: file_exists(path)
+
+=>unlink()
+- unlink() function deletes a file.
+- Syntax: unlink(filename, context)
+- 'filename' Specifies the path to the file to delete
+- 'context' Specifies the context of the file handle
+
+=>rename()
+- rename() function renames a file or directory
+- Syntax: rename(old, new, context)
+- 'old' Specifies the file or directory to be renamed
+- 'new' Specifies the new name for the file or directory
+- 'context' Specifies the context of the file handle
+
+=>Move_uploaded_file()
+- move_uploaded_file() function moves an uploaded file to a new destination.
+- Syntax: move_uploaded_file(file, dest)
+- 'file' Specifies the filename of the uploaded file
+- 'dest' Specifies the new location for the file
