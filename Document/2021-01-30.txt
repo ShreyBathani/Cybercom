@@ -1,0 +1,14 @@
+==============PHP==============
+=>mail()
+- mail() function allows you to send emails directly from a script.
+- Syntax: mail(to,subject,message,headers,parameters);
+- 'to' Specifies the receiver / receivers of the email
+- 'subject' Specifies the subject of the email. Note: This parameter cannot contain any newline characters
+- 'message' Defines the message to be sent. Each line should be separated with a LF (\n). Lines should not exceed 70 characters.
+- 'headers' Specifies additional headers, like From, Cc, and Bcc.
+- 'parameters' Specifies an additional parameter to the sendmail program
+
+=>SimpleXML
+- simplexml_load_string() function is used to read XML data from a string.
+- simplexml_load_file() function is used to read XML data from a file.
+
