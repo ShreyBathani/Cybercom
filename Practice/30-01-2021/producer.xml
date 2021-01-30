@@ -1,0 +1,32 @@
+<producers>
+    <producer>
+        <name>Mark</name>
+        <age>25</age>
+        <show>
+            <showname>First show</showname>
+            <showdate>12th feb, 2021</showdate>
+        </show>
+        <show>
+            <showname>Second show</showname>
+            <showdate>14th feb, 2021</showdate>
+        </show>
+    </producer>
+
+    <producer>
+        <name>John</name>
+        <age>32</age>
+        <show>
+            <showname>First show</showname>
+            <showdate>16th feb, 2021</showdate>
+        </show>
+    </producer>
+
+    <producer>
+        <name>Michel</name>
+        <age>22</age>
+        <show>
+            <showname>First show</showname>
+            <showdate>18th feb, 2021</showdate>
+        </show>
+    </producer>
+</producers>
