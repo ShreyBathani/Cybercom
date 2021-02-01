@@ -1,0 +1,31 @@
+h2{
+    color: red;
+    margin: 0px;
+}
+table{
+    margin: 0 auto;
+}
+td{
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: deepskyblue;
+}
+th{
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: lightyellow;
+}
+input,textarea,select{
+    background-color: lightgreen;
+    width: 300px;
+}
+tr td:first-child{
+    width: 200px;
+}
+input[type=checkbox],input[type=radio]{
+    width: auto;
+}
+input[type=reset],input[type=submit]{
+    width: 150px;
+    height: 35px;
+}

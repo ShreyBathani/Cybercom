@@ -1,0 +1,41 @@
+.container {
+	font-size: 18px;
+    width: 400px;
+    height: 480px;
+    margin: 0 auto;
+    padding-top: 0px;
+	background-color: orange;
+}
+.heading{
+    padding: 10px;
+    color: yellow;
+}
+table {
+	background-color: #1b2b46;
+	color: yellow;
+	width: 100%;
+}
+tr td:first-child{
+    text-align: right;
+    padding: 10px;
+    padding-right: 20px;
+}
+label{
+    text-align: right;
+}
+.submit {
+    background-color: #2ecc71;
+    float: right;
+	margin: 5px;
+	height: 30px;
+	color: #fff;
+	border: none;
+}
+.reset {
+    background-color: #e74c3c;
+    float: right;
+	margin: 5px;
+	height: 30px;
+	color: #fff;
+	border: none;
+}
