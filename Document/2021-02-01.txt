@@ -1,0 +1,16 @@
+==============PHP==============
+=>Connect to the MySQL database server
+- For Create connection
+    $conn = new mysqli($servername, $username, $password);
+- For Check connection
+    if (!$conn) {
+        die("Connection failed: " . mysqli_connect_error());
+    }
+- For close connection
+    mysqli_close($conn);
+
+=>Select Data From a MySQL Database
+- SELECT statement is used to select data from one or more tables:
+    SELECT column_name(s) FROM table_name
+- we can also use the * character to select ALL columns from a table:
+    SELECT * FROM table_name
