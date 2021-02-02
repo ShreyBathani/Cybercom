@@ -1,0 +1,6 @@
+==============PHP==============
+=>Lernt basic MySQL query
+
+=>Practice on basic MySQL query
+
+=>Complete the all registration form with client-side and server-side validation which is given by akhilesh sir (Database connection remain).
