@@ -6,25 +6,49 @@ function validate() {
     var gender = document.forms["userdata"]["gender"]; 
     var age = document.forms["userdata"]["age"]; 
     var file = document.forms["userdata"]["file"]; 
-    var flag = 0;
-    if (name.value == "") { 
-        window.alert("Please enter your name."); 
+
+    var nameerr = document.getElementById('nameerr');
+    var passworderr = document.getElementById('passworderr');
+    var addresserr = document.getElementById('addresserr');
+    var gameerr = document.getElementById('gameerr');
+    var gendererr = document.getElementById('gendererr');
+    var ageerr = document.getElementById('ageerr');
+    var fileerr = document.getElementById('fileerr');
+
+    
+    nameerr.textContent = '';
+    if (name.value.trim() == "" || name.value.trim() == null) {
+        nameerr.textContent = 'This field is required'; 
         name.focus(); 
         return false; 
+    }
+    else if(!name.value.match(/^[A-Za-z ]+$/)){
+        nameerr.textContent = 'Only letter and whitespace are alowed'; 
+        name.focus(); 
+        return false;
     } 
 
-    if (password.value == "") { 
-        window.alert("Please enter your password"); 
+    passworderr.textContent = '';
+    if (password.value.trim() == "" || password.value.trim() == null) { 
+        passworderr.textContent = 'This field is required'; 
         password.focus(); 
         return false; 
     }
+    else if(password.value.length < 6){
+        passworderr.textContent = 'Password must be at least 6 characters long'; 
+        password.focus(); 
+        return false;
+    }
 
-    if (address.value == "") { 
-        window.alert("Please enter your address."); 
+    addresserr.textContent = '';
+    if (address.value.trim() == "" || address.value.trim() == null) { 
+        addresserr.textContent = 'This field is required'; 
         address.focus(); 
         return false; 
     } 
 
+    var flag = 0;
+    gameerr.textContent = '';
     for(var i=0;i<game.length;i++) {
         console.log(game[i]);
         if(game[i].checked==true) {
@@ -33,25 +57,31 @@ function validate() {
         }
     }
     if(flag==0) {
-        window.alert("Please select game.");
+        gameerr.textContent = 'This field is required';
         return false;
     } 
 
-    if (gender.value == "") { 
-        window.alert("Please enter your gender."); 
+    gendererr.textContent = '';
+    if (gender.value.trim() == "" || gender.value.trim() == null) { 
+        gendererr.textContent = 'This field is required'; 
         return false; 
     } 
 
+    ageerr.textContent = '';
     if (age.selectedIndex < 1) { 
-        alert("Please select your age."); 
+        ageerr.textContent = 'This field is required'; 
         age.focus(); 
         return false; 
     } 
 
-    if (file.value == "") { 
-        window.alert("Please select file."); 
-        file.focus(); 
+    fileerr.textContent = '';
+    if (file.value.trim() == "" || file.value.trim() == null) {
+        fileerr.textContent = 'This field is required';  
         return false; 
+    }
+    else if(!file.value.match(/(\.jpeg|\.jpg|\.png)$/i)){
+        fileerr.textContent = 'Only .jpg , .jpeg , .png file allowed';  
+        return false;
     }
     return true; 
 }

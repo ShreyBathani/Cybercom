@@ -1,3 +1,6 @@
+<?php
+    include 'servervalidation.php';
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,17 +9,19 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<form action="signup.php?load=1" name="userdata" method="POST" onsubmit="return validate()">
+	<form action="signup.php" name="userdata" method="POST" onsubmit="return validate()">
 		<div class="container">
             <div class="heading">Sign Up</div> 
 			<table>
 					<tr>
 						<td><label for="fname">First Name</label></td>
-						<td><input type="text" name="fname" id="fname" placeholder="Enter First Name"></td>
+						<td><input type="text" name="fname" id="fname" placeholder="Enter First Name">
+						<br><span class="error" id="fnameerr"><?php echo $fnameerr; ?></span></td>
 					</tr>
 					<tr>
 						<td><label for="lname">Last Name</label></td>
-						<td><input type="text" name="lname" id="lname" placeholder="Enter Last Name"></td>
+						<td><input type="text" name="lname" id="lname" placeholder="Enter Last Name">
+						<br><span class="error" id="lnameerr"><?php echo $lnameerr; ?></span></td>
 					</tr>
 					<tr>
 						<td><label for="dob">Date of Birth</label></td>
@@ -104,13 +109,14 @@
 								<option value="2019">2019</option>
 								<option value="2020">2020</option>
 								<option value="2021">2021</option>
-							</select>
+							</select><br><span class="error" id="doberr"><?php echo $doberr; ?></span>
 						</td>
 					</tr>
 					<tr>
 						<td><label for="gender">Gender</label></td>
 						<td><input type="radio" name="gender">Male
-							<input type="radio" name="gender">Female</td>
+							<input type="radio" name="gender">Female
+							<br><span class="error" id="gendererr"><?php echo $gendererr; ?></span></td>
 					</tr>
 					<tr>
 						<td><label for="country">Country</label></td>
@@ -119,37 +125,42 @@
 								<option value="India">India</option>
 								<option value="Usa">Usa</option>
 								<option value="Japan">Japan</option>
-							</select></td>
+							</select><br><span class="error" id="countryerr"><?php echo $countryerr; ?></span></td>
 					</tr>
 					<tr>
 						<td><label for="email">Enter E-mail</label></td>
-						<td><input type="email" name="email" id="email" placeholder="Enter E-mail"></td>
+						<td><input type="email" name="email" id="email" placeholder="Enter E-mail">
+						<br><span class="error" id="emailerr"><?php echo $emailerr; ?></span></td>
 					</tr>
 					<tr>
 						<td><label for="phone">Phone Number</label></td>
-						<td><input type="text" name="phone" id="phone" placeholder="Enter Phone"></td>
+						<td><input type="text" name="phone" id="phone" placeholder="Enter Phone">
+						<br><span class="error" id="phoneerr"><?php echo $phoneerr; ?></span></td>
 					</tr>
 					<tr>
 						<td><label for="password">Password</label></td>
-						<td><input type="password" name="password" id="password"></td>
+						<td><input type="password" name="password" id="password">
+						<br><span class="error" id="passworderr"><?php echo $passworderr; ?></span></td>
 					</tr>
 					<tr>
 						<td><label for="confirmpass">Confirm Password</label></td>
-						<td><input type="password" name="confirmpass" id="confirmpass"></td>
+						<td><input type="password" name="confirmpass" id="confirmpass">
+						<br><span class="error" id="confirmpasserr"><?php echo $confirmpasserr; ?></span></td>
 					</tr>
 					<tr>
 						<td></td>
-						<td><input type="checkbox" name="agree">I accept this agrement</td>
+						<td><input type="checkbox" name="agree">I accept this agrement
+						<br><span class="error" id="agreeerr"><?php echo $agreeerr; ?></span></td>
 					</tr>
 			</table>
-			<span>
+			<span><span class="error">All fields are required*</span>
 				<input type="reset" name="reset" value="Cancel" class="reset">
 				<input type="submit" name="submit" value="Submit" class="submit">
 			</span>
 		</div>
 	</form>
 	<?php
-		if(isset($_GET['load'])){
+		if($flag == 1){
             echo "<h2>Your given values are :</h2>";
 			echo "<p><b>First Name: </b>". @$_POST['fname']."</p>";
 			echo "<p><b>Last Name: </b>". @$_POST['lname']."</p>";

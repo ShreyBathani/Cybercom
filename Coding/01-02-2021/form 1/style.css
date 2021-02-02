@@ -29,3 +29,6 @@ input[type=reset],input[type=submit]{
     width: 150px;
     height: 35px;
 }
+.error{
+    color: red;
+}
