@@ -7,57 +7,85 @@ function validate() {
     var game = document.forms["userdata"]['game[]'];
     var married = document.forms["userdata"]["married"];
     var agree = document.forms["userdata"]['agree'];
+
+    var fnameerr = document.getElementById('fnameerr');
+    var passworderr = document.getElementById('passworderr');
+    var gendererr = document.getElementById('gendererr');
+    var addresserr = document.getElementById('addresserr');
+    var doberr = document.getElementById('doberr');
+    var gameerr = document.getElementById('gameerr');
+    var marriederr = document.getElementById('marriederr');
+    var agreeerr = document.getElementById('agreeerr');
      
-    var flag = 0;
-    if (fname.value == "") { 
-        window.alert("Please enter your name."); 
+
+    fnameerr.textContent = '';
+    if (fname.value.trim() == "" || fname.value.trim() == null) {
+        fnameerr.textContent = 'This field is required'; 
         fname.focus(); 
         return false; 
+    }
+    else if(!fname.value.match(/^[A-Za-z ]+$/)){
+        fnameerr.textContent = 'Only letter and whitespace are alowed'; 
+        fname.focus(); 
+        return false;
     } 
 
-    if (password.value == "") { 
-        window.alert("Please enter your password"); 
+    passworderr.textContent = '';
+    if (password.value.trim() == "" || password.value.trim() == null) { 
+        passworderr.textContent = 'This field is required'; 
         password.focus(); 
         return false; 
     }
+    else if(password.value.length < 6){
+        passworderr.textContent = 'At least 6 characters long'; 
+        password.focus(); 
+        return false;
+    }
 
-    if (gender.value == "") { 
-        window.alert("Please select your gender."); 
+    gendererr.textContent = '';
+    if (gender.value.trim() == "" || gender.value.trim() == null) { 
+        gendererr.textContent = 'This field is required'; 
         return false; 
     }
 
-    if (address.value == "") { 
-        window.alert("Please enter your address."); 
+    addresserr.textContent = '';
+    if (address.value.trim() == "" || address.value.trim() == null) { 
+        addresserr.textContent = 'This field is required'; 
         address.focus(); 
         return false; 
-    } 
+    }
 
-    if (dob.value == "") { 
-        window.alert("Please enter your date of birth."); 
+    doberr.textContent = '';
+    if (dob.value.trim() == "" || dob.value.trim() == null) { 
+        doberr.textContent = 'This field is required'; 
         dob.focus(); 
         return false; 
     }
 
+    var flag = 0;
+    gameerr.textContent = '';
     for(var i=0;i<game.length;i++) {
-        console.log(game[i]);
         if(game[i].checked==true) {
             flag=1;
             break;
         }
     }
     if(flag==0) {
-        window.alert("Please select game.");
+        gameerr.textContent = 'This field is required';
         return false;
-    }  
+    }
 
-    if (married.value == "") { 
-        window.alert("Please select your marital status."); 
+    marriederr.textContent = '';
+    if (married.value.trim() == "" || married.value.trim() == null) { 
+        marriederr.textContent = 'This field is required'; 
         return false; 
     }
 
+    agreeerr.textContent = '';
     if (agree.checked == false) { 
-        window.alert("Please accept agreement.");  
+        agreeerr.textContent = "Please accept Terms.";  
         return false; 
     }
+    
     return true; 
 }

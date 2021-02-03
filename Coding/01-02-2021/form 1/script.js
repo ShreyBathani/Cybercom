@@ -50,7 +50,7 @@ function validate() {
     var flag = 0;
     gameerr.textContent = '';
     for(var i=0;i<game.length;i++) {
-        console.log(game[i]);
+        //console.log(game[i]);
         if(game[i].checked==true) {
             flag=1;
             break;

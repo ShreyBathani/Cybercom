@@ -4,29 +4,48 @@ function validate() {
     var subject = document.forms["userdata"]["subject"]; 
     var message = document.forms["userdata"]["message"]; 
  
+    var nameerr = document.getElementById('nameerr');
+    var emailerr = document.getElementById('emailerr');
+    var subjecterr = document.getElementById('subjecterr');
+    var messageerr = document.getElementById('messageerr');
 
-    if (name.value == "") { 
-        window.alert("Please enter your name."); 
+
+    nameerr.textContent = '';
+    if (name.value.trim() == "" || name.value.trim() == null) {
+        nameerr.textContent = '*Please enter your name.'; 
         name.focus(); 
         return false; 
+    }
+    else if(!name.value.match(/^[A-Za-z ]+$/)){
+        nameerr.textContent = '*Only letter and whitespace are alowed'; 
+        name.focus(); 
+        return false;
     } 
 
+    emailerr.textContent = '';
     if (email.value == "") { 
-        window.alert("Please enter your email"); 
+        emailerr.textContent = "*Please enter your email.";
         email.focus(); 
         return false; 
     }
+    else if (!email.value.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)) {
+        email.focus(); 
+        emailerr.textContent = "*Use valid email format.";
+        return false;
+	}
 
-    if (subject.value == "") { 
-        window.alert("Please enter subject."); 
+    subjecterr.textContent = '';
+    if (subject.value.trim() == "" || subject.value.trim() == null) { 
+        subjecterr.textContent = '*This field is required'; 
         subject.focus(); 
         return false; 
-    }  
-
-    if (message.value == "") { 
-        window.alert("Please enter your message."); 
-        message.focus();
+    }
+    
+    messageerr.textContent = '';
+    if (message.value.trim() == "" || message.value.trim() == null) { 
+        messageerr.textContent = '*This field is required'; 
+        message.focus(); 
         return false; 
-    } 
+    }
     return true; 
 }

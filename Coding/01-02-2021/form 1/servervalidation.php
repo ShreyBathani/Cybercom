@@ -1,7 +1,7 @@
 <?php
 $nameerr = $passworderr = $addresserr = $gameerr = $gendererr = $ageerr = $fileerr = "";
 $name = $password = $addres  = $file = "";
-$game = $gende = $age = array();
+$game = $gender = $age = array();
 $flag = 0;
 function input($data) {
     $data = trim($data);

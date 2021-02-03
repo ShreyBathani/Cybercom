@@ -1,5 +1,6 @@
 <?php
-    include 'servervalidation.php';
+	include 'servervalidation.php';
+	include '../database entry.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -114,8 +115,8 @@
 					</tr>
 					<tr>
 						<td><label for="gender">Gender</label></td>
-						<td><input type="radio" name="gender">Male
-							<input type="radio" name="gender">Female
+						<td><input type="radio" name="gender" value="male">Male
+							<input type="radio" name="gender" value="female">Female
 							<br><span class="error" id="gendererr"><?php echo $gendererr; ?></span></td>
 					</tr>
 					<tr>
@@ -161,15 +162,17 @@
 	</form>
 	<?php
 		if($flag == 1){
+			$dob = $day. ' ' . $month . ', ' . $year;
             echo "<h2>Your given values are :</h2>";
-			echo "<p><b>First Name: </b>". @$_POST['fname']."</p>";
-			echo "<p><b>Last Name: </b>". @$_POST['lname']."</p>";
-			echo "<p><b>Date of Birth: </b>". @$_POST['day'] .' '. @$_POST['month'] .' '. @$_POST['year']."</p>";
-			echo "<p><b>Gender: </b>". @$_POST['gender']."</p>";
-			echo "<p><b>Country: </b>". @$_POST['country']."</p>";
-            echo "<p><b>Email: </b>". @$_POST['email']."</p>";
-            echo "<p><b>Phone: </b>". @$_POST['phone']."</p>";
-            echo "<p><b>Password: </b>". @$_POST['password']."</p>"; 
+			echo "<p><b>First Name: </b>". $fname."</p>";
+			echo "<p><b>Last Name: </b>". $lname."</p>";
+			echo "<p><b>Date of Birth: </b>". $dob . "</p>";
+			echo "<p><b>Gender: </b>". $gender."</p>";
+			echo "<p><b>Country: </b>". $country."</p>";
+            echo "<p><b>Email: </b>". $email."</p>";
+            echo "<p><b>Phone: </b>". $phone."</p>";
+			echo "<p><b>Password: </b>". $password."</p>";
+			form3($conn, $fname, $lname, $dob, $gender, $country, $email, $phone, $password); 
         }
     ?>
 </body>

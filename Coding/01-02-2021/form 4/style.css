@@ -49,3 +49,7 @@ input[type=submit]{
     border-bottom-left-radius: 5px;
     margin: 0px;
 }
+.error{
+    color:red;
+    padding-left: 15px;
+}

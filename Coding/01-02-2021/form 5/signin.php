@@ -1,3 +1,8 @@
+<?php
+	include 'servervalidation.php';
+	include '../database entry.php';
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,23 +11,28 @@
     <script src="script.js"></script>
 </head>
 <body><br><br><br>
-	<form action="signin.php?load=1" name="userdata" method="POST" onsubmit="return validate()">
+	<form action="signin.php" name="userdata" method="POST" onsubmit="return validate()">
 		<div class="container">
 			<div class="header">Sign In</div>
 			<div class="content"><br>
-				<label>E-mail address</label><br>
-				<input type="email" name="email" id="email"><br>
-				<label>password</label><br>
-				<input type="password" name="password" id="password"><br>
+				<label>E-mail address<span class="red" >*</span></label><br>
+				<input type="email" name="email" id="email">
+				<br><span class="error" id="emailerr"><?php echo $emailerr ;?></span><br>
+				
+				<label>password<span class="red" >*</span></label><br>
+				<input type="password" name="password" id="password">
+				<br><span class="error" id="passworderr"><?php echo $passworderr ;?></span><br>
+
 				<center><input type="submit" name="submit" id="submit"></center>
 			</div>
         </div>
 	</form>
 	<?php
-		if(isset($_GET['load'])){
-            echo "<h2>Your given values are :</h2>";
-			echo "<p><b>Email: </b>". @$_POST['email']."</p>";
-			echo "<p><b>Password: </b>". @$_POST['password']."</p>";
+		if($flag == 1){
+            //echo "<h2>Your given values are :</h2>";
+			//echo "<p><b>Email: </b>". $email."</p>";
+			//echo "<p><b>Password: </b>". $password."</p>";
+			form5($conn, $email, $password);
 		}
     ?>
 </body>

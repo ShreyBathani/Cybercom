@@ -1,5 +1,6 @@
 <?php
     include 'servervalidation.php';
+    include '../database entry.php';
 ?>
 
 <!DOCTYPE html>
@@ -70,24 +71,16 @@
         </form><br><br>
         <?php
                 if($flag == 1){
+                    $games = implode(', ',$game);
                     echo "<h2>Your given values are :</h2>";
-                    echo "<p><b>Name: </b>". @$_POST['name']."</p>";
-                    echo "<p><b>Password: </b>". @$_POST['password']."</p>";
-                    echo "<p><b>Address: </b>". @$_POST['address']."</p>";
-                    echo "<span><b>Game/s: </b></span>";
-                    $cnt = 0;
-                    if(!empty(@$_POST['game'])){
-                        for($i = 0; $i < @count(@$_POST['game']); $i++) {
-                            echo @$_POST['game'][$i];
-                            if($cnt < count(@$_POST['game']) - 1){
-                                echo ", ";
-                                $cnt++;
-                            }
-                        }
-                    } 
-                    echo "<p><b>Gender: </b>". @$_POST['gender']."</p>";
-                    echo "<p><b>Age: </b>". @$_POST['age']."</p>";
-                    echo "<p><b>File: </b>". @$_FILES['file']['name']."</p>";  
+                    echo "<p><b>Name: </b>". @$name."</p>";
+                    echo "<p><b>Password: </b>". @$password."</p>";
+                    echo "<p><b>Address: </b>". @$address."</p>";
+                    echo "<span><b>Game/s: </b>". $games ."</span>";
+                    echo "<p><b>Gender: </b>". @$gender."</p>";
+                    echo "<p><b>Age: </b>". @$age."</p>";
+                    echo "<p><b>File: </b>". @$filename."</p>";
+                    form1($conn, $name, $password, addslashes($address), $games, $gender, $age, $filename);  
                 }
         ?>
     </bbody>

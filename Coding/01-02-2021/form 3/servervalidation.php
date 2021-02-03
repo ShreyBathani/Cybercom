@@ -62,7 +62,7 @@ if (isset($_POST['submit'])) {
         $GLOBALS['flag'] = 0;
     }
     else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $emailer = "invalid email format.";
+        $emailerr = "invalid email format.";
         $GLOBALS['flag'] = 0;
     }
 

@@ -27,4 +27,6 @@ tr td:first-child label{
 tr td:first-child{
     vertical-align: top;
 }
-
+.error{
+    color: red;
+}
