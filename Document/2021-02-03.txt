@@ -1,0 +1,9 @@
+==============PHP==============
+=>Lernt MySQL query
+- ex. LIKE, LEFT JOIN, RIGHT JOIN, JOIN(inner join)
+
+=>Practice on MySQL query
+
+=>Create small user login form with database connectivity.
+
+=>Complete the all registration form with Database connection.
