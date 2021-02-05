@@ -1,0 +1,27 @@
+==============PHP==============
+=>Exception
+- throw statement allows a user defined function or method to throw an exception.
+- When an exception is thrown, the code following it will not be executed.
+- If an exception is not caught, a fatal error will occur with an "Uncaught Exception" message.
+- we can use the try...catch statement to catch exceptions and continue the process.
+
+=>Class
+- A class is defined by using the class keyword.
+Syntax: class className{
+            //cpde
+        }
+- Objects of a class is created using the new keyword.
+- $this keyword refers to the current object.
+- inherited class is defined by using the extends keyword.
+
+=>Constants
+- A class constant is declared inside a class with the const keyword.
+- We can access a constant from outside the class by using the scope resolution operator (::)
+- we can access a constant from inside the class by using the self keyword and the scope resolution operator (::)
+
+=>Constructor
+- constructor allows you to initialize an object's properties when you create an object from a class.
+- construct function starts with two underscores.
+Syntax: function __construct(args){
+            //code
+        }
